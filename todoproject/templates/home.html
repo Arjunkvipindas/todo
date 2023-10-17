@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+        <div class="banner">
+            <div class="banner-text">
+                <h1>TODO</h1>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+    <form method="POST" class="p-3 shadow">
+    <input type="hidden" name="csrfmiddlewaretoken" value="GaKPyxgIYTIb78cye8Owg0gBMomD96RKKjyV3rKy4BjQyvnixjIbsO1OXshm6tzU">
+    <div class="form-group">
+        <input type="text" class="form-control" name="task" placeholder="Enter the taskname">
+        <input type="text" class="form-control" name="priority" placeholder="Enter your priority">
+        <input type="date" class="form-control" name="date" placeholder="Enter the date">
+        <input type="submit" class="btn btn-success">
+    </div>
+        </form>
+
+
+
+
+        </div>
+        <div class="col-md-6">
+            <h1>TASKS TO BE COMPLETED</h1>
+
+            <div class="shadow card">
+                <div class="card-body">
+                    <h5 class="card-title">Hello</h5>
+                    <p><b>4</b></p>
+                    <p><b>Aug. 18, 2023</b></p>
+                    <a href="/delete/4/" class="btn btn-danger">Done</a>
+                    <a href="/update/4/" class="btn btn-danger">Update</a>
+
+                </div>
+            </div>
+             <br>
+
+        </div>
+    </div>
+</div>
+
+
+
+</body>
+</html>
